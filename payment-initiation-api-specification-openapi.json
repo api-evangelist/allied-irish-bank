@@ -1,0 +1,117 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Payment Initiation API Specification",
+        "description": "Swagger for Payment Initiation API Specification",
+        "termsOfService": "https:\/\/www.openbanking.org.uk\/terms"
+    },
+    "servers": [
+        "https\/open-banking\/v1.1"
+    ],
+    "paths": {
+        "\/payments": {
+            "post": {
+                "summary": "Create a single immediate payment",
+                "description": "Create a single immediate payment",
+                "operationId": "CreateSingleImmediatePayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Setup a single immediate payment"
+                    }
+                ]
+            }
+        },
+        "\/payments\/{PaymentId}": {
+            "get": {
+                "summary": "Get a single immediate payment",
+                "description": "Get a single immediate payment",
+                "operationId": "GetSingleImmediatePayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PaymentId",
+                        "in": "path",
+                        "description": "Unique identification as assigned by the ASPSP to uniquely identify the payment setup resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/payment-submissions": {
+            "post": {
+                "summary": "Create a payment submission",
+                "description": "Submit a previously setup payment",
+                "operationId": "CreatePaymentSubmission",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Setup a single immediate payment"
+                    }
+                ]
+            }
+        },
+        "\/payment-submissions\/{PaymentSubmissionId}": {
+            "get": {
+                "summary": "Get a payment submission",
+                "description": "Get payment submission",
+                "operationId": "GetPaymentSubmission",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "PaymentSubmissionId",
+                        "in": "path",
+                        "description": "Unique identification as assigned by the ASPSP to uniquely identify the payment submission resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
