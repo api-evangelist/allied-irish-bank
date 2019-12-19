@@ -1,0 +1,757 @@
+{
+    "id": "41254442365034c7337f34faf1278e9c",
+    "name": "Account and Transaction API Specification",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "46a8811e4ceeb236fe2e038fa89d9cff",
+            "name": "Create an account request",
+            "url": "https\/open-banking\/v1.1\/account-requests",
+            "description": "Create an account request",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "Create an Account Request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "747b55953cb52b16f431785eff4beef6",
+            "name": "Get an account request",
+            "url": "https\/open-banking\/v1.1\/account-requests\/{AccountRequestId}",
+            "description": "Get an account request",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountRequestId",
+                    "description": "Unique identification as assigned by the ASPSP to uniquely identify the account request resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "8dd489ba5993b7c03f51fbe3bd146995",
+            "name": "Delete an account request",
+            "url": "https\/open-banking\/v1.1\/account-requests\/{AccountRequestId}",
+            "description": "Delete an account request",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountRequestId",
+                    "description": "Unique identification as assigned by the ASPSP to uniquely identify the account request resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c16c379edecd0e08da8f1621666486b",
+            "name": "Get Accounts",
+            "url": "https\/open-banking\/v1.1\/accounts",
+            "description": "Get a list of accounts",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "cfbc133c24ff56760061c86286beb33d",
+            "name": "Get Account",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}",
+            "description": "Get an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0ab2d6493761e1c4e4513956ea78068",
+            "name": "Get Account Transactions",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/transactions",
+            "description": "Get transactions related to an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromBookingDateTime",
+                    "description": "The UTC ISO 8601 Date Time to filter transactions FROM \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toBookingDateTime",
+                    "description": "The UTC ISO 8601 Date Time to filter transactions TO \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "90d773f35443a77dcf972f8441146654",
+            "name": "Get Account Beneficiaries",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/beneficiaries",
+            "description": "Get Beneficiaries related to an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "04c2ed58c351867d4efba3e4aae61f05",
+            "name": "Get Account Balances",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/balances",
+            "description": "Get Balances related to an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "1812ee2ad5bd07fb615f218dc1e8ae71",
+            "name": "Get Account Direct Debits",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/direct-debits",
+            "description": "Get Direct Debits related to an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "e755588cdaa541adfe7b73dfb54107ca",
+            "name": "Get Account Standing Orders",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/standing-orders",
+            "description": "Get Standing Orders related to an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "2dfa2bb8d92ffc923e6c8207903e84bc",
+            "name": "Get Account Product",
+            "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/product",
+            "description": "Get Product related to an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "AccountId",
+                    "description": "A unique identifier used to identify the account resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "96a12b283bd36fc7941292655b2a2bb1",
+            "name": "Get Standing Orders",
+            "url": "https\/open-banking\/v1.1\/standing-orders",
+            "description": "Get Standing Orders",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "60705dad82c983a09933a32f70f967af",
+            "name": "Get Direct Debits",
+            "url": "https\/open-banking\/v1.1\/direct-debits",
+            "description": "Get Direct Debits",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "db5adf55f4996ff9c3c0544ab9275b58",
+            "name": "Get Beneficiaries",
+            "url": "https\/open-banking\/v1.1\/beneficiaries",
+            "description": "Get Beneficiaries",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a55f564807e0f4203a5dd5d827b7102",
+            "name": "Get Transactions",
+            "url": "https\/open-banking\/v1.1\/transactions",
+            "description": "Get Transactions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromBookingDateTime",
+                    "description": "The UTC ISO 8601 Date Time to filter transactions FROM \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toBookingDateTime",
+                    "description": "The UTC ISO 8601 Date Time to filter transactions TO \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "07ecb9135e37c815d2a65d8b0338ebd0",
+            "name": "Get Balances",
+            "url": "https\/open-banking\/v1.1\/balances",
+            "description": "Get Balances",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        },
+        {
+            "id": "a83f055b4a727acf6d096661533ce227",
+            "name": "Get Products",
+            "url": "https\/open-banking\/v1.1\/products",
+            "description": "Get Products",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41254442365034c7337f34faf1278e9c",
+            "rawModeData": ""
+        }
+    ]
+}
