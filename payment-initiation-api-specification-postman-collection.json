@@ -1,0 +1,193 @@
+{
+    "id": "8e5e23573fec1280345dcff40c708677",
+    "name": "Payment Initiation API Specification",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "0fea2e9ddd548963f9cb560408df4a84",
+            "name": "Create a single immediate payment",
+            "url": "https\/open-banking\/v1.1\/payments",
+            "description": "Create a single immediate payment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Setup a single immediate payment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "rawModeData": ""
+        },
+        {
+            "id": "02faa9e96f82245b633b65b4c218a47c",
+            "name": "Get a single immediate payment",
+            "url": "https\/open-banking\/v1.1\/payments\/{PaymentId}",
+            "description": "Get a single immediate payment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PaymentId",
+                    "description": "Unique identification as assigned by the ASPSP to uniquely identify the payment setup resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "rawModeData": ""
+        },
+        {
+            "id": "5fb05c79380168c79e6412652ea9beb6",
+            "name": "Create a payment submission",
+            "url": "https\/open-banking\/v1.1\/payment-submissions",
+            "description": "Submit a previously setup payment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x",
+                    "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Setup a single immediate payment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "rawModeData": ""
+        },
+        {
+            "id": "356d04706a2547924309182d12c817c9",
+            "name": "Get a payment submission",
+            "url": "https\/open-banking\/v1.1\/payment-submissions\/{PaymentSubmissionId}",
+            "description": "Get payment submission",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "PaymentSubmissionId",
+                    "description": "Unique identification as assigned by the ASPSP to uniquely identify the payment submission resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "rawModeData": ""
+        }
+    ]
+}
