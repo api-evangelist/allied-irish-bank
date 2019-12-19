@@ -1,0 +1,59 @@
+{
+    "id": "fbbc9871af62d9893631ae61472c87c7",
+    "name": "Allied Irish Bank",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b8e2fc168f54ea257c6ec0933a87ea4e",
+            "name": "Get Current Business Accounts",
+            "url": "httpsopenapi.aibgb.co.ukopen-banking\/v2.1\/business-current-accounts\/",
+            "description": "This endpoint can contain multiple brands owned by a particular banking group. Each brand can own multiple BCA products.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fbbc9871af62d9893631ae61472c87c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "8499e5077c563e9148aa79441ceaa5a6",
+            "name": "Get Unsecured SME Loans",
+            "url": "httpsopenapi.aibgb.co.ukopen-banking\/v2.1\/unsecured-sme-loans\/",
+            "description": "This endpoint can contain multiple brands owned by a particular banking group. Each brand can own multiple SME Unsecured Loan products.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fbbc9871af62d9893631ae61472c87c7",
+            "rawModeData": ""
+        }
+    ]
+}
