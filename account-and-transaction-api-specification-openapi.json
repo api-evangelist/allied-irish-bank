@@ -1,0 +1,425 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Account and Transaction API Specification",
+        "description": "Swagger for Account and Transaction API Specification",
+        "termsOfService": "https:\/\/www.openbanking.org.uk\/terms"
+    },
+    "servers": [
+        "https\/open-banking\/v1.1"
+    ],
+    "paths": {
+        "\/account-requests": {
+            "post": {
+                "summary": "Create an account request",
+                "description": "Create an account request",
+                "operationId": "CreateAccountRequest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Create an Account Request"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/account-requests\/{AccountRequestId}": {
+            "get": {
+                "summary": "Get an account request",
+                "description": "Get an account request",
+                "operationId": "GetAccountRequest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountRequestId",
+                        "in": "path",
+                        "description": "Unique identification as assigned by the ASPSP to uniquely identify the account request resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete an account request",
+                "description": "Delete an account request",
+                "operationId": "DeleteAccountRequest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountRequestId",
+                        "in": "path",
+                        "description": "Unique identification as assigned by the ASPSP to uniquely identify the account request resource."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    }
+                ]
+            }
+        },
+        "\/accounts": {
+            "get": {
+                "summary": "Get Accounts",
+                "description": "Get a list of accounts",
+                "operationId": "GetAccounts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}": {
+            "get": {
+                "summary": "Get Account",
+                "description": "Get an account",
+                "operationId": "GetAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}\/transactions": {
+            "get": {
+                "summary": "Get Account Transactions",
+                "description": "Get transactions related to an account",
+                "operationId": "GetAccountTransactions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "fromBookingDateTime",
+                        "in": "query",
+                        "description": "The UTC ISO 8601 Date Time to filter transactions FROM \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set"
+                    },
+                    {
+                        "name": "toBookingDateTime",
+                        "in": "query",
+                        "description": "The UTC ISO 8601 Date Time to filter transactions TO \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}\/beneficiaries": {
+            "get": {
+                "summary": "Get Account Beneficiaries",
+                "description": "Get Beneficiaries related to an account",
+                "operationId": "GetAccountBeneficiaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}\/balances": {
+            "get": {
+                "summary": "Get Account Balances",
+                "description": "Get Balances related to an account",
+                "operationId": "GetAccountBalances",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}\/direct-debits": {
+            "get": {
+                "summary": "Get Account Direct Debits",
+                "description": "Get Direct Debits related to an account",
+                "operationId": "GetAccountDirectDebits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}\/standing-orders": {
+            "get": {
+                "summary": "Get Account Standing Orders",
+                "description": "Get Standing Orders related to an account",
+                "operationId": "GetAccountStandingOrders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{AccountId}\/product": {
+            "get": {
+                "summary": "Get Account Product",
+                "description": "Get Product related to an account",
+                "operationId": "GetAccountProduct",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "AccountId",
+                        "in": "path",
+                        "description": "A unique identifier used to identify the account resource."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/standing-orders": {
+            "get": {
+                "summary": "Get Standing Orders",
+                "description": "Get Standing Orders",
+                "operationId": "GetStandingOrders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/direct-debits": {
+            "get": {
+                "summary": "Get Direct Debits",
+                "description": "Get Direct Debits",
+                "operationId": "GetDirectDebits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/beneficiaries": {
+            "get": {
+                "summary": "Get Beneficiaries",
+                "description": "Get Beneficiaries",
+                "operationId": "GetBeneficiaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/transactions": {
+            "get": {
+                "summary": "Get Transactions",
+                "description": "Get Transactions",
+                "operationId": "GetTransactions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    },
+                    {
+                        "name": "fromBookingDateTime",
+                        "in": "query",
+                        "description": "The UTC ISO 8601 Date Time to filter transactions FROM \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set"
+                    },
+                    {
+                        "name": "toBookingDateTime",
+                        "in": "query",
+                        "description": "The UTC ISO 8601 Date Time to filter transactions TO \nNB Time component is optional - set to 00:00:00 for just Date.  \nThe parameter must NOT have a timezone set"
+                    }
+                ]
+            }
+        },
+        "\/balances": {
+            "get": {
+                "summary": "Get Balances",
+                "description": "Get Balances",
+                "operationId": "GetBalances",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        },
+        "\/products": {
+            "get": {
+                "summary": "Get Products",
+                "description": "Get Products",
+                "operationId": "GetProducts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "The unique id of the ASPSP to which the request is issued. The unique id will be issued by OB."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "An Authorisation Token as per https:\/\/tools.ietf.org\/html\/rfc6750"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
