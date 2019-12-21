@@ -12,8 +12,8 @@
         "relative data",
         "uk banks"
     ],
-    "created": "2019-12-18",
-    "modified": "2019-12-18",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -27,11 +27,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/allied-irish-bank-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/allied-irish-bank.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/allied-irish-bank.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/allied-irish-bank-openapi.json"
                 }
             ]
         },
@@ -45,11 +45,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/payment-initiation-api-specification-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/payment-initiation-api-specification.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/payment-initiation-api-specification.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/payment-initiation-api-specification-openapi.json"
                 }
             ]
         },
@@ -63,17 +63,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/account-and-transaction-api-specification-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/account-and-transaction-api-specification.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/account-and-transaction-api-specification.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/account-and-transaction-api-specification-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Developers",
             "url": "http:\/\/openbankingapis.io\/Allied-Irish-Bank"
