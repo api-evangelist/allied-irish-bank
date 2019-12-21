@@ -1,5 +1,5 @@
 {
-    "id": "8e5e23573fec1280345dcff40c708677",
+    "id": "d79f986bcd534676ce256e2b47f74f73",
     "name": "Payment Initiation API Specification",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0fea2e9ddd548963f9cb560408df4a84",
+            "id": "c9e2054c51a7ef41b8c0049d2c859f71",
             "name": "Create a single immediate payment",
             "url": "https\/open-banking\/v1.1\/payments",
             "description": "Create a single immediate payment",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "collectionId": "d79f986bcd534676ce256e2b47f74f73",
             "rawModeData": ""
         },
         {
-            "id": "02faa9e96f82245b633b65b4c218a47c",
+            "id": "12c69cb31dee35e2afcb404a7f55bd87",
             "name": "Get a single immediate payment",
             "url": "https\/open-banking\/v1.1\/payments\/{PaymentId}",
             "description": "Get a single immediate payment",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "collectionId": "d79f986bcd534676ce256e2b47f74f73",
             "rawModeData": ""
         },
         {
-            "id": "5fb05c79380168c79e6412652ea9beb6",
+            "id": "2a46ee18e180d96c5e70262a9c193211",
             "name": "Create a payment submission",
             "url": "https\/open-banking\/v1.1\/payment-submissions",
             "description": "Submit a previously setup payment",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "collectionId": "d79f986bcd534676ce256e2b47f74f73",
             "rawModeData": ""
         },
         {
-            "id": "356d04706a2547924309182d12c817c9",
+            "id": "39ddc0e33592e3321a40d2fabc533167",
             "name": "Get a payment submission",
             "url": "https\/open-banking\/v1.1\/payment-submissions\/{PaymentSubmissionId}",
             "description": "Get payment submission",
@@ -186,7 +186,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8e5e23573fec1280345dcff40c708677",
+            "collectionId": "d79f986bcd534676ce256e2b47f74f73",
             "rawModeData": ""
         }
     ]
