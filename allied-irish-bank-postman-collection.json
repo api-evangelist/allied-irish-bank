@@ -1,5 +1,5 @@
 {
-    "id": "7270d88da7bcabbf01c3ee1154c4f25e",
+    "id": "adf08ca3b986d0d7dac49a1db0f0e872",
     "name": "Allied Irish Bank",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "672ec2ce3740925b6c94a53282818679",
+            "id": "c0d00eecfd610b6b5f40220e0fc71533",
             "name": "Get Current Business Accounts",
             "url": "httpsopenapi.aibgb.co.ukopen-banking\/v2.1\/business-current-accounts\/",
             "description": "This endpoint can contain multiple brands owned by a particular banking group. Each brand can own multiple BCA products.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7270d88da7bcabbf01c3ee1154c4f25e",
+            "collectionId": "adf08ca3b986d0d7dac49a1db0f0e872",
             "rawModeData": ""
         },
         {
-            "id": "a319fd987b02ae40dffc324ad417ad8c",
+            "id": "e95228aaf5af0c8eebfd89bc3fe14b2d",
             "name": "Get Unsecured SME Loans",
             "url": "httpsopenapi.aibgb.co.ukopen-banking\/v2.1\/unsecured-sme-loans\/",
             "description": "This endpoint can contain multiple brands owned by a particular banking group. Each brand can own multiple SME Unsecured Loan products.",
@@ -52,7 +52,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7270d88da7bcabbf01c3ee1154c4f25e",
+            "collectionId": "adf08ca3b986d0d7dac49a1db0f0e872",
             "rawModeData": ""
         }
     ]
