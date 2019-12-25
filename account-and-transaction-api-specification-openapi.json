@@ -1,11 +1,5 @@
 {
     "openapi": "3.0.0",
-    "info": {
-        "version": "",
-        "title": "Account and Transaction API Specification",
-        "description": "Swagger for Account and Transaction API Specification",
-        "termsOfService": "https:\/\/www.openbanking.org.uk\/terms"
-    },
     "servers": [
         "https\/open-banking\/v1.1"
     ],
