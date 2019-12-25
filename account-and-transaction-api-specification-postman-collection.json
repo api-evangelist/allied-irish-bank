@@ -1,5 +1,5 @@
 {
-    "id": "1cf4937b1a610024932a037dbd54bfbf",
+    "id": "0c4c5a0c5e2da76a5d3973c7d1da895a",
     "name": "Account and Transaction API Specification",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "537783898c69053ba5a28f86349fcddd",
+            "id": "87c0ec57a795d517d46a35706d42760e",
             "name": "Create an account request",
             "url": "https\/open-banking\/v1.1\/account-requests",
             "description": "Create an account request",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "435ca9ec4bab297843242ed4a7b72cd9",
+            "id": "975ad4e1b886026009a8eaad81ea1507",
             "name": "Get an account request",
             "url": "https\/open-banking\/v1.1\/account-requests\/{AccountRequestId}",
             "description": "Get an account request",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "5080b1cd77434a554fc7f1759375d3b3",
+            "id": "8b9da9466a72840a54cb70345c321e12",
             "name": "Delete an account request",
             "url": "https\/open-banking\/v1.1\/account-requests\/{AccountRequestId}",
             "description": "Delete an account request",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "1c233835edbd882035e37465d2693e67",
+            "id": "a90b4f19d24a2b0cd339a16db807219b",
             "name": "Get Accounts",
             "url": "https\/open-banking\/v1.1\/accounts",
             "description": "Get a list of accounts",
@@ -179,11 +179,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "a4b183de881f4a1d1bc9d87dae3e6a3c",
+            "id": "3f26687937d44e085258c4409bd1a71c",
             "name": "Get Account",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}",
             "description": "Get an account",
@@ -224,11 +224,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "a4fdaa87c19d0f86056c1baee9a77f19",
+            "id": "b43e586cccf01ac9fe5871be9cc5116a",
             "name": "Get Account Transactions",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/transactions",
             "description": "Get transactions related to an account",
@@ -283,11 +283,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "4b723d763a2be798acbfac026bc42635",
+            "id": "17fbfe0483ab4b9ec78cefc449526b6d",
             "name": "Get Account Beneficiaries",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/beneficiaries",
             "description": "Get Beneficiaries related to an account",
@@ -328,11 +328,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "0d02997cfd1dfe2984beb3d1ed1adc59",
+            "id": "0484a3365b93fc72e90e26992cc67df3",
             "name": "Get Account Balances",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/balances",
             "description": "Get Balances related to an account",
@@ -373,11 +373,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "e1ecc426aace7c48efe2a5d33afebf81",
+            "id": "60926fb2c1c3cf97dafa73ad26fe228f",
             "name": "Get Account Direct Debits",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/direct-debits",
             "description": "Get Direct Debits related to an account",
@@ -418,11 +418,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "b0fd8df4e15c3235e2fbf69b170dbd10",
+            "id": "f94f48be650e299899a1893f35c15bda",
             "name": "Get Account Standing Orders",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/standing-orders",
             "description": "Get Standing Orders related to an account",
@@ -463,11 +463,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "d07122f23266725151b44e1f8a991f1b",
+            "id": "f202bb13632f8f27843d31e827f803f0",
             "name": "Get Account Product",
             "url": "https\/open-banking\/v1.1\/accounts\/{AccountId}\/product",
             "description": "Get Product related to an account",
@@ -508,11 +508,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "4f77d601cca8aafdaf9de62aa23f9fc1",
+            "id": "048123b72f6e2073996f8969895f6772",
             "name": "Get Standing Orders",
             "url": "https\/open-banking\/v1.1\/standing-orders",
             "description": "Get Standing Orders",
@@ -546,11 +546,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "236b3d9c35a8f1243ebf4660b7601dae",
+            "id": "27408aa62ad5b7c7eedd7ea343e9d6bd",
             "name": "Get Direct Debits",
             "url": "https\/open-banking\/v1.1\/direct-debits",
             "description": "Get Direct Debits",
@@ -584,11 +584,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "85fd5dcbacbdd59ee24c66601f6b7525",
+            "id": "1e45bdf35ecf4eda2dac5e1064820e84",
             "name": "Get Beneficiaries",
             "url": "https\/open-banking\/v1.1\/beneficiaries",
             "description": "Get Beneficiaries",
@@ -622,11 +622,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "6b0389cfffda0defa263be69100b9462",
+            "id": "7942402b19d814e9bf5810886c9b4f3d",
             "name": "Get Transactions",
             "url": "https\/open-banking\/v1.1\/transactions",
             "description": "Get Transactions",
@@ -674,11 +674,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "cb8e67aed97942117b56361da077d1cb",
+            "id": "67286b2a20d3b9e0679ccd91fd9e571a",
             "name": "Get Balances",
             "url": "https\/open-banking\/v1.1\/balances",
             "description": "Get Balances",
@@ -712,11 +712,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         },
         {
-            "id": "b00afe08b484a5537f2a3bf7ef1ffa3a",
+            "id": "e955809546d97da365966107a2fc2f15",
             "name": "Get Products",
             "url": "https\/open-banking\/v1.1\/products",
             "description": "Get Products",
@@ -750,7 +750,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1cf4937b1a610024932a037dbd54bfbf",
+            "collectionId": "0c4c5a0c5e2da76a5d3973c7d1da895a",
             "rawModeData": ""
         }
     ]
