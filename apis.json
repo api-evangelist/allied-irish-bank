@@ -12,8 +12,8 @@
         "relative data",
         "uk banks"
     ],
-    "created": "2019-12-20",
-    "modified": "2019-12-20",
+    "created": "2019-12-25",
+    "modified": "2019-12-25",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -32,11 +32,19 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/allied-irish-bank-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/allied-irish-bank-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/allied-irish-bank-postman-collection.json"
                 }
             ]
         },
         {
-            "name": "Payment Initiation API Specification",
+            "name": "Payment Initiation",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/allied-irish-bank.jpeg",
             "humanURL": "https:\/\/aibgb.co.uk\/",
@@ -50,11 +58,19 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/payment-initiation-api-specification-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/payment-initiation-api-specification-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/payment-initiation-api-specification-postman-collection.json"
                 }
             ]
         },
         {
-            "name": "Account and Transaction API Specification",
+            "name": "Account and Transaction",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/allied-irish-bank.jpeg",
             "humanURL": "https:\/\/aibgb.co.uk\/",
@@ -68,6 +84,14 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/account-and-transaction-api-specification-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/account-and-transaction-api-specification-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/allied-irish-bank\/master\/account-and-transaction-api-specification-postman-collection.json"
                 }
             ]
         }
