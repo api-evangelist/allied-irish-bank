@@ -2,7 +2,7 @@
     "openapi": "3.0.0",
     "info": {
         "version": "",
-        "title": "Payment Initiation API Specification",
+        "title": "Payment Initiation",
         "description": "Swagger for Payment Initiation API Specification",
         "termsOfService": "https:\/\/www.openbanking.org.uk\/terms"
     },
